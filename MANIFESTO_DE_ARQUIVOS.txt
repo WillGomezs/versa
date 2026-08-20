@@ -1,0 +1,81 @@
+VERSA PROFESSIONAL LEARNING PLATFORM — PACOTE MULTITRILHAS COMPLETO — v1.9.1
+MASTERY ENGINE + VISUAL LEARNING 505/505 + QA PROFISSIONAL
+
+TRILHAS INCLUÍDAS
+- DATAPREV 2026 — Segurança Cibernética e Proteção de Dados.
+- ASON 2027 — baseada no programa de 2026 até a publicação do edital oficial de 2027.
+- IBGE 2026 — Analista Censitário — Ciências Sociais/Antropologia.
+- CFAQ-MOC Nacional — Moço de Convés — todas as Capitanias.
+- TRANSPETRO 2026.4 · Ênfase 7 — Análise de Sistemas — Segurança Cibernética e da Informação.
+- PND 2025 · História — Prova Nacional Docente / ENADE Licenciaturas — História.
+
+RESUMO GLOBAL DO CONTEÚDO
+- 6 trilhas.
+- 107 módulos.
+- 505 microlições.
+- 625 flashcards.
+- 1.885 questões.
+- 337 recursos de estudo/videoaulas.
+- 505/505 microlições com demonstrativo visual guiado.
+- DATAPREV: 133/133 visuais.
+- ASON: 80/80.
+- IBGE: 98/98.
+- CFAQ-MOC: 30/30.
+- TRANSPETRO: 64/64.
+- PND História: 100/100.
+
+NOVA TRILHA — PND 2025 · HISTÓRIA
+- 20 módulos e 100 microlições.
+- 352 questões interativas.
+- 159 questões oficiais válidas oriundas da 1ª e 2ª aplicações de 2025.
+- 193 questões autorais de reforço e transferência.
+- 1 questão anulada da 1ª aplicação excluída do banco oficial.
+- 120 flashcards com resposta direta (100 base + 20 estratégicos).
+- 100 demonstrativos visuais guiados.
+- 100 links diretos selecionados, cobrindo 100/100 microlições e 20/20 módulos.
+- Diagnóstico de 30 questões.
+- 76 bases textuais oficiais associadas aos itens.
+- Capturas WebP das páginas originais para conferência das questões oficiais.
+- Progresso isolado em versa-progress-pnd-historia.
+
+FONTES PND INCORPORADAS AO PACOTE
+- documentos/pnd-historia/2025_historia_PV_1.pdf
+- documentos/pnd-historia/2025_historia_GB_1.pdf
+- documentos/pnd-historia/2025_historia_PV_5.pdf
+- documentos/pnd-historia/2025_historia_GB_5.pdf
+
+ARQUIVOS PRINCIPAIS
+1. index.html — entrada, CSP e ordem de carregamento.
+2. app.js — interface, navegação e renderer genérico.
+3. styles.css — tema, responsividade e componentes visuais.
+4. pnd-historia-data.js — catálogo completo da trilha PND História.
+5. pnd-historia-visuals.js — 100 visuais da trilha PND.
+6. dataprev-visuals.js + dataprev-visuals-extra.js — visuais DATAPREV.
+7. course-visuals.js — catálogo visual ASON, IBGE, CFAQ-MOC e TRANSPETRO.
+8. adaptive-engine.js — Mastery Engine v2.0.0.
+9. flashcards-priority-data.js + flashcards-data.js + flashcards-engine.js — flashcards.
+10. cfaq-data.js, transpetro-cyber-data.js e dataprev-history-data.js — catálogos específicos.
+11. assets/pnd/ — evidências visuais das páginas oficiais.
+12. documentos/pnd-historia/ — provas e gabaritos fonte.
+13. qa/ — testes, diagnósticos, auditorias e gate de release.
+
+VALIDAÇÃO v1.9.1
+- npm run test:static: PASS.
+- 25.216 verificações estáticas aprovadas.
+- PND História: 2.255 verificações específicas aprovadas.
+- Cobertura visual global: 505/505.
+- Flashcards: 625/625 com resposta direta.
+- Mastery Engine: PASS.
+- Persistência local: PASS.
+- Segurança estática: PASS.
+- Auditoria estrutural: 6 trilhas / 505 lições / 505 visuais / 625 flashcards.
+- QA de navegador v1.9.1: não reexecutado neste sandbox porque `jsdom` e `@playwright/test` não estão instalados e a instalação de dependências externas ficou indisponível.
+- O `qa:release` registra essa limitação como `NOT READY`, sem invalidar o resultado da suíte estática.
+- Para fechar o gate de navegador em outro ambiente: `npm ci`, `npm run qa:install` e `npm run qa:release:strict`.
+
+COMANDOS
+- npm run test:static
+- npm run validate:pnd-historia
+- npm run qa:audit
+- npm run qa:release
+- npm run checksums

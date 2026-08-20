@@ -1,0 +1,7 @@
+{
+  "status": "passed",
+  "auditedAt": "2026-08-13",
+  "checks": 26,
+  "failures": [],
+  "scope": "static"
+}

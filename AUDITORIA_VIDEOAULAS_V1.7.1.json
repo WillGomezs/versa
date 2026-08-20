@@ -1,0 +1,20 @@
+{
+  "status": "passed",
+  "auditedAt": "2026-08-19",
+  "checks": 3210,
+  "summary": {
+    "courses": 6,
+    "catalogEntries": 337,
+    "directVideoIds": 140,
+    "counts": {
+      "dataprev": 50,
+      "ason": 50,
+      "ibge": 80,
+      "cfaq": 17,
+      "transpetro-cyber": 40,
+      "pnd-historia": 100
+    },
+    "retiredReferencesBlocked": 8
+  },
+  "failures": []
+}

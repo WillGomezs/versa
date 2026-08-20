@@ -1,0 +1,41 @@
+{
+  "name": "versa-concursos-multitrilhas",
+  "version": "1.9.1",
+  "private": true,
+  "description": "Versa Professional Learning Platform v1.9.1 com seis trilhas; PND História corrigida com simulados próprios, treino discursivo, 120 flashcards e cobertura audiovisual 100/100.",
+  "scripts": {
+    "build:cfaq": "node tools/build-cfaq-course.js",
+    "build:dataprev-history": "node tools/build-dataprev-history.js",
+    "validate:cfaq": "node tools/validate-cfaq-course.js",
+    "validate:dataprev-history": "node tools/validate-dataprev-history.js",
+    "validate:flashcards": "node tools/validate-flashcards.js",
+    "validate:videos": "node tools/validate-video-links.js",
+    "validate:adaptive": "node tools/validate-adaptive-engine.js",
+    "audit:security": "node tools/security-audit.js",
+    "test:dom": "node tools/smoke-test-dom.js",
+    "test": "npm run validate:cfaq && npm run validate:dataprev-history && npm run validate:dataprev-visuals && npm run validate:course-visuals && npm run validate:all-visuals && npm run validate:transpetro-cyber && npm run validate:pnd-historia && npm run validate:flashcards && npm run validate:videos && npm run validate:adaptive && npm run validate:mastery && npm run validate:render && npm run test:dom && npm run audit:security",
+    "checksums": "node tools/update-checksums.js",
+    "validate:transpetro-cyber": "node tools/validate-transpetro-cyber.js",
+    "audit:security:static": "node tools/security-audit-static.js",
+    "test:static": "npm run validate:cfaq && npm run validate:dataprev-history && npm run validate:dataprev-visuals && npm run validate:course-visuals && npm run validate:all-visuals && npm run validate:transpetro-cyber && npm run validate:pnd-historia && npm run validate:flashcards && npm run validate:videos && npm run validate:adaptive && npm run validate:mastery && npm run validate:render && npm run audit:security:static",
+    "validate:mastery": "node tools/validate-mastery-ui.js",
+    "validate:render": "node tools/validate-render-templates.js",
+    "validate:dataprev-visuals": "node tools/validate-dataprev-visuals.js",
+    "validate:course-visuals": "node tools/validate-course-visuals.js",
+    "validate:all-visuals": "node tools/validate-all-visuals.js",
+    "qa:install": "npm --prefix qa install",
+    "qa:dom": "npm --prefix qa run test:dom",
+    "qa:e2e": "npm --prefix qa run test:e2e",
+    "qa:audit": "node qa/validators/project-audit.js",
+    "qa:release": "node qa/validators/release-check.js",
+    "qa:release:strict": "node qa/validators/release-check.js --strict",
+    "qa:e2e:desktop": "npm --prefix qa run test:e2e:desktop",
+    "qa:e2e:mobile": "npm --prefix qa run test:e2e:mobile",
+    "qa:e2e:publication": "npm --prefix qa run test:publication",
+    "qa:browser:runtime": "node qa/validators/playwright-runtime.js",
+    "validate:pnd-historia": "node tools/validate-pnd-historia.js"
+  },
+  "devDependencies": {
+    "jsdom": "26.1.0"
+  }
+}

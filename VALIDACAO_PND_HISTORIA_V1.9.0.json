@@ -1,0 +1,17 @@
+{
+  "status": "passed",
+  "checks": 2145,
+  "failures": [],
+  "summary": {
+    "course": "pnd-historia",
+    "units": 20,
+    "lessons": 100,
+    "questions": 352,
+    "official": 159,
+    "authorial": 193,
+    "diagnostic": 30,
+    "videos": 50,
+    "visuals": 100,
+    "textBases": 76
+  }
+}
